@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Controle de Borda</h1>
+
+    <h2>De onde você é? <input type="text" name="origem" id="origem"></h2>
+    <input type="button" value="Checar" onclick="status()">
+
+<script>
+    function status(){
+        paisOrigem = document.getElementById("origem")
+        pais = String(paisOrigem.value).toUpperCase()
+    
+        console.log(pais)
+        if (pais !== "BRASIL") {
+            console.log('Gringo')
+        } else {
+            console.log('Nacional')
+        }
+    }
+</script>
+    
+</body>
+</html>

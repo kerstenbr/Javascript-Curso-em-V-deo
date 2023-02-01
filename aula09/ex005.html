@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(80, 80, 101);
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+
+    <h1></h1>
+    <div id="ID">Clique em Mim</div>
+    <h1></h1>
+
+    <div name="nome">Clique em Mim</div>
+
+    <h1></h1>
+    <div class="testes">Classes0</div>
+    <div class="testes">Classes1</div>
+    <div class="testes">Classes2</div>
+    <div class="testes">Classes3</div>
+    <div class="testes">Classes4</div>
+    <h1></h1>
+
+    <div id="queryteste">Query Selector!</div>
+    <div class="queryTesteClass">Query Selector!</div>
+
+    
+    <script>
+        var corpo = document.body
+
+        var p1 = document.getElementsByTagName('p')[0]
+
+        var d = document.getElementById('ID')
+        d.style.background = 'black'
+        d.innerText = 'Sucesso em selecionar por id!'
+        //document.getElementById("msg").innerText = "Forma Longa!"
+
+        var tes = document.getElementsByName('nome')[0]
+        tes.innerText = 'Sucesso em selecionar por name!'
+
+        
+        var tes2 = document.getElementsByClassName('testes')[2]
+        tes2.innerText = 'Sucesso em selecionar por class!' 
+        // ----------------------------------- \\
+
+        var tesQuery = document.querySelector('div#queryteste')
+        tesQuery.style.color = 'blue'
+
+        var tesQueryClass = document.querySelector('div.queryTesteClass')
+        tesQueryClass.style.color = 'red'
+
+        
+    </script>
+</body>
+</html>

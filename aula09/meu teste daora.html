@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(80, 80, 101);
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div>Clique em Mim</div>
+
+    <script>
+        var n1 = Number(prompt('Digite o numero 1'))
+        var n2 = Number(prompt('Digite o numero 2'))
+
+        var res = n1 + n2
+        console.log(res) // Aqui estou testando para ver se a variavel realmente ta pegando os valores
+      
+
+        if (res > 5) {
+            document.body.style.background = 'rgb(123, 36, 36)'; // se res for maior que cinco, o fundo fica vermelho
+        }
+        else {
+            document.body.style.background = 'rgb(0, 0, 99)'; // se res for menor que cinco, o fundo fica azul
+        }
+        
+        // document.body.style.font = 'bold 25pt '; aqui eu consigo mudar a fonta.
+        // tenho que decorar como usar a arvore do dom.
+    </script>
+</body>
+</html>

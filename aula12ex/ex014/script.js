@@ -1,7 +1,7 @@
 //Isso aqui é uma gambiarra malfeita.
 //TODO: Realmente dar refresh na div em vez de fazer essa coisa porca
 function carregar(){
-    setInterval(carregar_teste, 1000)
+    setInterval(carregar_teste)
 }
 
 //A Função em si

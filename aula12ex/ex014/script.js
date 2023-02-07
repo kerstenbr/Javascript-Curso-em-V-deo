@@ -1,4 +1,4 @@
-//Isso aqui é uma gambiarra malfeita.
+//Isso aqui é uma gambiarra
 //TODO: Realmente dar refresh na div em vez de fazer essa coisa porca
 function carregar(){
     setInterval(carregar_teste)
@@ -13,7 +13,7 @@ function carregar_teste(){
     let min = data.getMinutes()
     let sec = data.getSeconds()
 
-    //Outras 2 gambiarras porcas
+    //Outras 2 gambiarras
     //TODO: Melhorar isso e fazer as coisas de um modo descente
     if (min < 10){
         min = '0' + min

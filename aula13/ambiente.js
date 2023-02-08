@@ -1,7 +1,7 @@
 function tudobem(){
-    var c = 1
-    while(c < 5){
-        console.log('Oi tudo bem')
+    var c = 0
+    while(c <= 500){
+        console.log(`Oi tudo bem ${c}`)
         c++
     }
 }

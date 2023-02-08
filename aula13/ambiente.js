@@ -6,4 +6,4 @@ function tudobem(){
     }
 }
 
-// Não consigo fazer rodar no pc da empresa por algum motivo
+tudobem() //eu so mt burro, eu esqueci DE CHAMAR A FUNÇÃO AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
